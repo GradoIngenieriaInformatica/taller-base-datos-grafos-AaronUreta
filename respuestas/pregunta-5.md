@@ -1,0 +1,1 @@
+MATCH path=(p1:Persona)-[r:AMIGO_DE*]->(p2:Persona) WHERE ALL(rel IN r WHERE rel.since > 2018) RETURN path;
